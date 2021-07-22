@@ -144,6 +144,7 @@ table {
 
 body {
   color: #000;
+  background: #ececec;
   font: 300 1rem "Times", Terminal, "Courier New", Courier;
 }
 
@@ -158,11 +159,9 @@ body {
 .container,
 .grid {
   margin: 0 auto;
-  /* font-size: 0; */
-  /*border: solid #000000;*/
-  background: #ececec;
-
-  /* width: 960px; */
+  min-height: max-content;
+  height: max-content;
+  min-height: calc(100vh - 90px);
   position: relative;
 }
 .container {
@@ -392,6 +391,18 @@ footer {
   display: inline-block;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #788b96;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  padding-left: 16px;
+  margin-top: 10px;
+}
 .btn-footer {
   font: normal 15px Arial, sans-serif;
 }

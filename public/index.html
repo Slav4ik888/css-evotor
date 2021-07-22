@@ -11,31 +11,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="container" >
+<body>
+  <div class="container">
+    <header class="section header">
+        <img src="../img/logo/logo-bc.png" class="logo" alt="Logo Badcom" />
+    </header>
+    
+    <section class="section section-style">
+      <div class="upload-box">
+        <div class="upload-title">Загрузите реестр</div>
+        <input type="file" accept="txt" class="add-file" />
+      </div>
+    </section>
 
-  <header class="section header">
-      <img src="../img/logo/logo-bc.png" class="logo" alt="Logo Badcom" />
-  </header>
-  
-  <section class="section section-style">
-    <div class="upload-box">
-      <div class="upload-title">Загрузите реестр</div>
-      <input type="file" accept="txt" class="add-file" />
-    </div>
-  </section>
+    <!-- ВЫВОД ИТОГОВОЙ ТАБЛИЦЫ -->
+    <section class="section section-style result-table hide">
+      <div class="buttons align-right">
+        <input type="button" class="button download-file" value="Скачать .CSV файл" />
+      </div>
 
-  <!-- ВЫВОД ИТОГОВОЙ ТАБЛИЦЫ -->
-  <section class="section section-style result-table hide">
-    <div class="buttons align-right">
-      <input type="button" class="button download-file" value="Скачать .CSV файл" />
-    </div>
+      <div id="res" class="result storage"></div>
+    </section>
+  </div>
 
-    <div id="res" class="result storage"></div>
-  </section>
-
-
+  <div class="footer">
+    Badcom © 2020 Created by Slav4ik888 - version 2020-08-12 13:35
+  </div>
 
   <script src="../js/index.js"></script>
-    
+      
 </body>
 </html>
