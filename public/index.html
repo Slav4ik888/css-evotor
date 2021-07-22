@@ -13,34 +13,29 @@
 
 <body class="container" >
 
-  <header class="header">
-    <img src="../img/logo/logo-bc.png" class="logo" alt="Logo Badcom" />
+  <header class="section header">
+      <img src="../img/logo/logo-bc.png" class="logo" alt="Logo Badcom" />
   </header>
   
-  <section>
-    <center_box>
-      <form onsubmit="return false">
-        <h1>Данные из файла:</h1>
-        <p><textarea id="arrFrom" rows="10" cols="85" placeholder="Вставьте скопированные данные" name="text"></textarea></p>
-        <p><input type="submit" onclick="init()" value="Обработать"></p>
-      </form>
-    </center_box>
+  <section class="section section-style">
+    <div class="upload-box">
+      <div class="upload-title">Загрузите реестр</div>
+      <input type="file" accept="txt" class="add-file" />
+    </div>
   </section>
 
-  <!-- ВЫВОД СВОДНОЙ ТАБЛИЦЫ -->
+  <!-- ВЫВОД ИТОГОВОЙ ТАБЛИЦЫ -->
+  <section class="section section-style result-table hide">
+    <div class="buttons align-right">
+      <input type="button" class="button download-file" value="Скачать .CSV файл" />
+    </div>
 
-  <section>
-    <center_box>
-      <div id="res" class="result storage">
-        
-      </div>
-    </center_box>
+    <div id="res" class="result storage"></div>
   </section>
 
 
 
-  <script src="./js/init.js"></script>
+  <script src="../js/index.js"></script>
     
 </body>
-
 </html>
