@@ -240,4 +240,4 @@ const createAndDownloadCSVFile = () => {
   autoDownloadFile(file);
 };
 
-// git add . && git commit -m "add all files to publish" && git push origin master
+// git add . && git commit -m "add footer" && git push origin master
