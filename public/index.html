@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+  <meta charset="utf8">
+  <title>Badcom - обработка реестра платежей из Сбер-бизнес</title>
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/logo/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/logo/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,300" rel="stylesheet" type="text/css">
+  <meta name="description" content="Да-телеком, обработка реестра платежей из Сбер-бизнес">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container" >
+
+  <header class="header">
+    <img src="../img/logo/logo-bc.png" class="logo" alt="Logo Badcom" />
+  </header>
+  
+  <section>
+    <center_box>
+      <form onsubmit="return false">
+        <h1>Данные из файла:</h1>
+        <p><textarea id="arrFrom" rows="10" cols="85" placeholder="Вставьте скопированные данные" name="text"></textarea></p>
+        <p><input type="submit" onclick="init()" value="Обработать"></p>
+      </form>
+    </center_box>
+  </section>
+
+  <!-- ВЫВОД СВОДНОЙ ТАБЛИЦЫ -->
+
+  <section>
+    <center_box>
+      <div id="res" class="result storage">
+        
+      </div>
+    </center_box>
+  </section>
+
+
+
+  <script src="./js/init.js"></script>
+    
+</body>
+
+</html>
